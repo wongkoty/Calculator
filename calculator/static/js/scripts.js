@@ -7,7 +7,20 @@ $(document).ready(function() {
   var answer = 0;
   var theRealAnswer = 0;
   var operation = "";
-  // number functions
+
+  var equals = function() {
+    if (operation === "plus") {
+      answer += augend;
+      augend = 0;
+    } else if (operation === "minus") {
+      answer -= augend;
+      augend = 0;
+    }
+    $('#window').empty()
+    $('#window').append(answer)
+  }
+
+  // number click functions
   $('#one').click(function() {
     // alert("handler has been clicked")
     $('#window').empty()
@@ -15,7 +28,7 @@ $(document).ready(function() {
     // augend = ($('#window').html())
     $('#window').append(augend)
     console.log(augend)
-    operation = "";
+    // operation = "";
   });
 
   $('#two').click(function() {
@@ -23,30 +36,34 @@ $(document).ready(function() {
     augend = 2;
     $('#window').append(augend)
     console.log(augend)
-    operation = "";
+    // operation = "";
   });
 
   $('#plus').click(function() {
-  operation = "plus";
-  if (operation === "plus") {
-    answer += augend
-    $('#window').empty();
-    $('#window').append(answer);
-    console.log(answer);
-    augend = 0;
-  }
+    operation = "plus";
+    equals();
+   
+  // if (operation === "plus") {
+  //   answer += augend
+  //   $('#window').empty();
+  //   $('#window').append(answer);
+  //   console.log(answer);
+  //   augend = 0;
+  // }
 
   });
 
   $('#minus').click(function() {
-  operation = "minus";
-  if (operation  === "minus") {
-    answer -= augend
-    $('#window').empty()
-    $('#window').append(answer)
-    console.log(answer)
-    augend = 0;
-  }
+    operation = "minus";
+    equals();
+
+  // if (operation  === "minus") {
+  //   answer -= augend
+  //   $('#window').empty()
+  //   $('#window').append(answer)
+  //   console.log(answer)
+  //   augend = 0;
+  // }
 
   });
 
@@ -108,13 +125,7 @@ $(document).ready(function() {
 
 
   $('#equals').click(function() {
-    if (operation === "plus") {
-      answer += augend;
-    } else if (operation === "minus") {
-      answer -= augend;
-    }
-    $('#window').empty()
-    $('#window').append(answer)
+    equals()
     // answer.push(augend)
     // answer.forEach(function(x){
     //   theRealAnswer += x;
