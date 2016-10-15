@@ -1,0 +1,47 @@
+body{
+
+}
+.holder {
+	width: 80%;
+	margin: auto;
+	.row1{
+		width: 50%;
+		text-align: center;
+		margin: auto;
+		#one, #two, #three{
+			display: inline-block;
+			padding: 20px;
+		}
+	}
+	.row2{
+		width: 50%;
+		text-align: center;
+		margin: auto;
+		#four, #five, #six{
+			display: inline-block;
+			padding: 20px;
+		}
+	}
+	.row3{
+		width: 50%;
+		text-align: center;
+		margin: auto;
+		#seven, #eight, #nine{
+			display: inline-block;
+			padding: 20px;
+		}
+	}
+	.sum{
+		width: 30%;
+		margin: auto;
+		border: 1px solid #000;
+    height: 50px;
+		#window{
+		}
+	}
+	.signs{
+		float: left;
+	}
+	#clear{
+	}
+}

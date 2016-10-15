@@ -1,0 +1,3 @@
+V.holder {\u000a  max-width: 1200px;\u000a  display: inline-block; }\u000a  .holder .row1 #one, .holder .row1 #two, .holder .row1 #three {\u000a    display: inline-block; }\u000a  .holder .row2 #four, .holder .row2 #five, .holder .row2 #six {\u000a    display: inline-block; }\u000a  .holder .row3 #seven, .holder .row3 #eight, .holder .row3 #nine {\u000a    display: inline-block; }\u000a\u000ah1 {\u000a  color: red; }\u000a
+p1
+.

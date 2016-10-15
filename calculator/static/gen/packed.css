@@ -1,0 +1,31 @@
+.holder {
+  width: 80%;
+  margin: auto; }
+  .holder .row1 {
+    width: 50%;
+    text-align: center;
+    margin: auto; }
+    .holder .row1 #one, .holder .row1 #two, .holder .row1 #three {
+      display: inline-block;
+      padding: 20px; }
+  .holder .row2 {
+    width: 50%;
+    text-align: center;
+    margin: auto; }
+    .holder .row2 #four, .holder .row2 #five, .holder .row2 #six {
+      display: inline-block;
+      padding: 20px; }
+  .holder .row3 {
+    width: 50%;
+    text-align: center;
+    margin: auto; }
+    .holder .row3 #seven, .holder .row3 #eight, .holder .row3 #nine {
+      display: inline-block;
+      padding: 20px; }
+  .holder .sum {
+    width: 30%;
+    margin: auto;
+    border: 1px solid #000;
+    height: 50px; }
+  .holder .signs {
+    float: left; }

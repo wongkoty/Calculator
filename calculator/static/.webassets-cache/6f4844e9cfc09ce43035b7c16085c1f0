@@ -1,0 +1,3 @@
+V.holder {\u000a  width: 80%;\u000a  margin: auto; }\u000a  .holder #one, .holder #two, .holder #three, .holder #four, .holder #five,\u000a  .holder #six, .holder #seven, .holder #eight, .holder #nine {\u000a    display: inline-block;\u000a    padding: 20px;\u000a    width: 50%;\u000a    text-align: center;\u000a    margin: auto; }\u000a\u000ah1 {\u000a  color: red; }\u000a
+p1
+.

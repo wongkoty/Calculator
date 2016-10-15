@@ -1,0 +1,3 @@
+V.holder {\u000a  max-width: 1200px; }\u000a\u000a  .row1, .row2, .row3 {\u000a    display: inline-block; }\u000a\u000a    h1 {\u000a      color: red; }\u000a
+p1
+.

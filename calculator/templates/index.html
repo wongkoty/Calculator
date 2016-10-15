@@ -7,12 +7,40 @@
     <script type="text/javascript" src="{{ ASSET_URL }}"></script>
 	{% endassets %}
 
+	{% assets "scss_all" %}
+	<link rel="stylesheet" type="text/css" href="{{ ASSET_URL }}">
+	{% endassets %}
 </head>
 <body>
-	<h1>Herro</h1>
-	<h1 id='one'>1</h1>
-	2
-	3
-	4
+	<div class="holder">
+		<h1>Herro</h1>
+		<div class="sum">
+			<span id="window"></span>
+		</div>
+		<div class="row1"> 
+			<span id='one'>1</span>
+			<span id='two'>2</span>
+			<span id='three'>3</span>
+		</div>
+		<div class="row2">
+			<span id='four'>4</span>
+			<span id='five'>5</span>
+			<span id='six'>6</span>
+		</div>
+		<div class="row3">
+			<span id='seven'>7</span>
+			<span id='eight'>8</span>
+			<span id='nine'>9</span>
+		</div>
+		<div> 
+			<span class="numbers" id='zero'>0</span>
+			<span id="clear">C</span>
+		</div>
+		<div class="signs">
+			<span id='plus'>+</span>
+			<span id='minus'>-</span>
+			<span id='equals'>=</span>
+		</div>
+	</div>
 </body>
 </html>
