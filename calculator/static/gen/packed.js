@@ -2,33 +2,51 @@ console.log('herro')
 
 $(document).ready(function() {
 
-  var augend = 0; 
+  var augend = "";
+  var augendBool = false;
+  // var addendBool = false; 
   var addend = 0;
-  var answer = 0;
-  var theRealAnswer = 0;
+  var sum = 0;
+  var theRealsum = 0;
   var operation = "";
 
   var equals = function() {
-    if (operation === "plus") {
-      answer += augend;
-      augend = 0;
+    if (operation === "") {
+      sum = parseInt(augend);
+    } else if (operation === "plus") {
+      sum += parseInt(augend);
+      augend = "";
+      $('#window').empty()
+      $('#window').append(sum)
     } else if (operation === "minus") {
-      answer -= augend;
-      augend = 0;
+      sum -= parseInt(augend);
+      augend = "";
+      $('#window').empty()
+      $('#window').append(sum)
     }
-    $('#window').empty()
-    $('#window').append(answer)
   }
+  // var checkAll = function(){
+  //   if (augendBool = false){
+  //     augendBool = true;
+  //     return true;
+  //   } else {
+  //     augendBool = false;
+  //     return false;
+  //   }
+  // }
+
 
   // number click functions
   $('#one').click(function() {
     // alert("handler has been clicked")
     $('#window').empty()
-    augend = 1;
+    augend += "1";
+    // addend = 1;
     // augend = ($('#window').html())
     $('#window').append(augend)
     console.log(augend)
-    // operation = "";
+    equals();
+    operation = "";
   });
 
   $('#two').click(function() {
@@ -36,34 +54,39 @@ $(document).ready(function() {
     augend = 2;
     $('#window').append(augend)
     console.log(augend)
-    // operation = "";
+    equals();
+    operation = "";
   });
 
   $('#plus').click(function() {
+
+  })
+
+  $('#plus').click(function() {
+    // equals();
     operation = "plus";
-    equals();
-   
-  // if (operation === "plus") {
-  //   answer += augend
-  //   $('#window').empty();
-  //   $('#window').append(answer);
-  //   console.log(answer);
-  //   augend = 0;
-  // }
+  
+    // if (operation === "plus") {
+    //   sum += augend
+    //   $('#window').empty();
+    //   $('#window').append(sum);
+    //   console.log(sum);
+    //   augend = 0;
+    // }
 
   });
 
   $('#minus').click(function() {
+    // equals();
     operation = "minus";
-    equals();
-
-  // if (operation  === "minus") {
-  //   answer -= augend
-  //   $('#window').empty()
-  //   $('#window').append(answer)
-  //   console.log(answer)
-  //   augend = 0;
-  // }
+  
+    // if (operation  === "minus") {
+    //   sum -= augend
+    //   $('#window').empty()
+    //   $('#window').append(sum)
+    //   console.log(sum)
+    //   augend = 0;
+    // }
 
   });
 
@@ -72,6 +95,8 @@ $(document).ready(function() {
     augend = 3;
     $('#window').append(augend)
     console.log(augend)
+    equals();
+    operation = "";
   });
 
   $('#four').click(function(){
@@ -79,6 +104,8 @@ $(document).ready(function() {
     augend = 4;
     $('#window').append(augend)
     console.log(augend)
+        equals();
+    operation = "";
   });
 
   $('#five').click(function(){
@@ -86,6 +113,8 @@ $(document).ready(function() {
     augend = 5;
     $('#window').append(augend)
     console.log(augend)
+        equals();
+    operation = "";
   });
 
   $('#six').click(function(){
@@ -93,6 +122,8 @@ $(document).ready(function() {
     augend = 6;
     $('#window').append(augend)
     console.log(augend)
+        equals();
+    operation = "";
   });
 
   $('#seven').click(function(){
@@ -100,6 +131,8 @@ $(document).ready(function() {
     augend = 7;
     $('#window').append(augend)
     console.log(augend)
+        equals();
+    operation = "";
   });
 
   $('#eight').click(function(){
@@ -107,6 +140,8 @@ $(document).ready(function() {
     augend = 8;
     $('#window').append(augend)
     console.log(augend)
+        equals();
+    operation = "";
   });
 
   $('#nine').click(function(){
@@ -114,6 +149,8 @@ $(document).ready(function() {
     augend = 9;
     $('#window').append(augend)
     console.log(augend)
+        equals();
+    operation = "";
   });
 
   $('#zero').click(function(){
@@ -121,22 +158,24 @@ $(document).ready(function() {
     augend = 0;
     $('#window').append(augend)
     console.log(augend)
+        equals();
+    operation = "";
   });
 
 
   $('#equals').click(function() {
     equals()
-    // answer.push(augend)
-    // answer.forEach(function(x){
-    //   theRealAnswer += x;
+    // sum.push(augend)
+    // sum.forEach(function(x){
+    //   theRealsum += x;
     // })
-    // console.log(theRealAnswer)
+    // console.log(theRealsum)
   });
 
 
   $('#clear').click(function() {
     $("#window").empty()
-    answer = 0;
+    sum = 0;
     augend = 0;
   });
 

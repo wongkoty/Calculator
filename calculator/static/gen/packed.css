@@ -28,4 +28,6 @@
     border: 1px solid #000;
     height: 50px; }
   .holder .signs {
-    float: left; }
+    float: left;
+    font-size: 30px;
+    padding: 15px; }
